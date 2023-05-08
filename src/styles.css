@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: #292929b6;
+  font-family: poppins;
+}
+
+.card {
+  background: #2e2d2de0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #363535, -10px -10px 20px #333333;
+  color: #ffffff;
+  margin: 30px auto;
+  width: 300px;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.name {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+h5 {
+  color: #f47d27;
+}
+.text {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-container {
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 22px;
+  font-size: 14px;
+  border-radius: 30px;
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.button.primary {
+  background-color: #f47d27;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+}
+
+.button:hover::before {
+  opacity: 1;
+}
+
+.container {
+  max-width: 300px;
+  justify-content: center;
+  padding: 0 25px 23px;
+  text-align: left;
+}
+
+.footer {
+  background-color: #555555;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f47d27;
+  transform: translateY(-5px);
+}
